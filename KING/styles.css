@@ -1,0 +1,169 @@
+* {
+    background-color: rgb(30, 30, 45); /* Dark background for a tech/security feel */
+    font-family: "Roboto", "Arial", sans-serif; /* Professional font choice */
+    color: white; /* Light text for contrast */
+}
+
+.content {
+    margin-top: 75px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 75px;
+}
+
+header {
+    display: grid;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 50px;
+    border-bottom: 2px solid rgb(90, 90, 120); /* Metallic border for a secure aesthetic */
+    background-color: rgb(20, 20, 35); /* Darker header */
+}
+
+header a {
+    margin-left: 2%;
+    background-color: transparent;
+    text-decoration: none;
+    color: rgb(80, 170, 240); /* Bright blue links for a tech vibe */
+    font-weight: bold;
+}
+
+header a:hover {
+    background-color: rgb(50, 50, 75); /* Subtle hover effect */
+}
+
+.score {
+    font-size: medium;
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 2px solid rgb(90, 90, 120);
+    background-color: rgb(20, 20, 35);
+}
+
+footer p,
+footer a {
+    display: inline;
+    color: rgb(150, 150, 180);
+}
+
+.footertext {
+    margin: 1%;
+}
+
+.nobreaks p,
+.nobreaks b,
+.nobreaks a {
+    display: inline;
+}
+
+.question {
+    background-color: rgb(40, 40, 60); /* Darker tone for question blocks */
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.question * {
+    background-color: transparent;
+    font-family: "Roboto", sans-serif;
+    color: rgb(210, 210, 230); /* Lighter text */
+}
+
+.question a {
+    text-decoration: underline;
+    color: rgb(80, 170, 240);
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 1%;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(80, 170, 240); /* Bright blue for action buttons */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(50, 130, 210); /* Subtle hover effect */
+}
+
+.right {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(60, 180, 90); /* Success green */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.wrong {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(200, 60, 80); /* Error red */
+    border-radius: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.previous {
+    background-color: #333;
+    color: white;
+}
+
+.next {
+    background-color: #1a73e8; /* Bright blue for next buttons */
+    color: white;
+}
+
+.explanation-box {
+    background-color: rgb(30, 30, 45);
+    border: 1px solid rgb(80, 80, 100);
+    font-size: smaller;
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: none;
+    color: rgb(210, 210, 230);
+}

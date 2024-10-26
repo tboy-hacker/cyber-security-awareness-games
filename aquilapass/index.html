@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Password Validator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>🔒 Aquila Cyber Password CTF Challenge! 🔓</h2>
+    <p>Are you ready to test your skills in our Password CTF Challenge as part of Cybersecurity Awareness Month? 💻</p>
+    <p>Join us to see if your password can crack the code and uncover hidden flags by following the cyber rules below:</p>
+    <p>Not playing the CTF? No problem! You can still check your password's health and make sure it meets the cybersecurity standards. 🔍🔐</p>
+
+    <input type="text" id="passwordInput" placeholder="Enter your secure password">
+
+    <!-- Flag display section -->
+    <p id="flagDisplay" class="hidden"></p>
+
+    <!-- Password strength meter -->
+    <div id="strengthMeter" class="strength-meter">
+        <div id="strengthBar" class="strength-bar"></div>
+    </div>
+
+    <ul>
+        <li id="rule1" class="invalid">Must be at least five characters long</li>
+        <li id="rule2" class="invalid">Must include at least one number</li>
+        <li id="rule3" class="invalid">Must include at least one uppercase letter</li>
+        <li id="rule4" class="invalid">Must include at least one special character</li>
+        <li id="rule5" class="invalid">Digits must add up to 25</li>
+        <li id="rule6" class="invalid">Must include a month of the year</li>
+        <li id="rule7" class="invalid">Must include a Roman numeral (I, V, X, L, C, D, M)</li>
+        <li id="rule8" class="invalid">Must include one of our sponsors (CyberCorp, SecureTech, SafeGuard)</li>
+        <li id="rule9" class="invalid">Roman numerals must multiply to 35</li>
+        <li id="rule10" class="invalid">CAPTCHA must be passed</li>
+        <li id="rule11" class="invalid">Must not contain sequential letters or numbers (e.g., 'abc', '123')</li>
+        <li id="rule12" class="invalid">Sum of the digits must be an odd number</li>
+    </ul>
+
+    <footer>
+        <p>Cybersecurity Awareness Month 2024 | Secure your digital life 🔐 | Powered by Aquila Cyber 🚀</p>
+        <p>Connect with us:</p>
+        <ul>
+            <li><a href="https://twitter.com/Aquila_Cyber" target="_blank">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

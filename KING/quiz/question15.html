@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cybersecurity Quiz</title>
+  <link rel="stylesheet" type="text/css" href="../styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+</head>
+
+<style>
+  img {
+    width: 50%;
+  }
+</style>
+
+<body>
+  <script src="../script.js"></script>
+  <header>
+    <a href="../index.html">Cybersecurity Quiz</a>
+    <div class="score">
+      <a>Score:</a>
+      <a id="score"></a>
+    </div>
+  </header>
+
+  <main>
+    <div class="content">
+      <h1>Question 15</h1>
+
+      <div class="question">
+        <div class="question">
+          <img src="../assets/images/image15.png">
+          <p>You have recieved this message. Is it safe to call or not?</p>
+        </div>
+      </div>
+
+
+      <article class="answer">
+        <a class="right button" data-explanation="Yes! It's from the official collegeboard email."
+          onclick="showExplanation(this); addScore();">Safe</a>
+        <a class="wrong button" data-explanation="Take a look at the emai. Is there anything suspicious about it?"
+          onclick="showExplanation(this)">Unsafe</a>
+      </article>
+      <div id="explanation" class="explanation-box" style="display: none;"></div>
+    </div>
+
+    <div class="navigation">
+      <a href="question14.html" class="previous button">&laquo; Previous</a>
+      <a href="question16.html" class="next button">Next &raquo;</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footertext">
+     <p>Check aquilacyber out</p>
+            <a href="https://www.x.com/aquila_cyber" target="_blank"
+                rel="noopener noreferrer">TWITTER</a>
+            <a href="https://chat.whatsapp.com/Gq35cpJOuSFEdoZOktx2R8" target="_blank"
+                rel="noopener noreferrer">COMMUNITY</a>
+    </div>
+  </footer>
+</body>
+
+<script>document.getElementById("score").innerHTML = sessionStorage.score;</script>
+
+</html>

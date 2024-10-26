@@ -1,0 +1,202 @@
+
+      body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+        h2 {
+            color: #58a6ff;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        input {
+            background-color: #161b22;
+            color: #c9d1d9;
+            border: 2px solid #58a6ff;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #161b22;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: border 0.3s ease-in-out;
+        }
+
+        .valid {
+            border-color: #2ea043;
+        }
+
+        .invalid {
+            border-color: #da3633;
+        }
+
+        .cyber-icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .valid .cyber-icon {
+            content: url('https://img.icons8.com/emoji/48/000000/check-mark-emoji.png');
+        }
+
+        .invalid .cyber-icon {
+            content: url('https://img.icons8.com/color/48/000000/cross-mark.png');
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+
+        /* Cyber grid background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(90deg, rgba(88,166,255,0.1) 1px, transparent 1px),
+                              linear-gradient(180deg, rgba(88,166,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: -1;
+        }
+
+        /* Glowing input focus */
+        input:focus {
+            outline: none;
+            border-color: #2ea043;
+            box-shadow: 0 0 10px #2ea043;
+        }
+
+        /* Responsive for Mobile */
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            input {
+                max-width: 100%;
+            }
+
+            li {
+                padding: 8px;
+            }
+        }
+/* styles.css */
+
+.flag-section {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #2ea043; /* Green color for successful flag display */
+    font-weight: bold;
+}
+
+/* Optional: Add animation for the flag display */
+.flag-section {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.flag-section:empty {
+    opacity: 0;
+}
+
+
+/* Flag display animation */
+#flagDisplay {
+    color: #2ea043;
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#flagDisplay.show {
+    opacity: 1;
+}
+
+/* Password strength meter */
+.strength-meter {
+    background-color: #161b22;
+    border: 2px solid #58a6ff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    height: 10px;
+    margin: 10px auto 20px auto;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: #da3633;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid ;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Styling for the footer links */
+footer p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #007BFF; /* Change color to suit your design */
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-decoration: underline;
+}
